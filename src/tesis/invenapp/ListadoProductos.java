@@ -3,7 +3,9 @@ package tesis.invenapp;
 import tesis.invenapp.controller.ListadoController;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
 import android.os.Bundle;
+import android.support.v4.widget.SimpleCursorAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -19,6 +21,7 @@ public class ListadoProductos extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.listado);
     elements = new ViewElements();
+    controller = new ListadoController(this);
   }
 
   @Override
@@ -60,12 +63,17 @@ public class ListadoProductos extends Activity {
 
     public ViewElements() {
       listView = (ListView) findViewById(R.id.list);
-      // Defined Array values to show in ListView
-      String[] values = new String[] { "Aretes", "Anillos", "Alligators",
-          "Brazaletes", "Bolsos", "Bañador", "Cinturon 102", "Cinturon 103",
-          "Cinturon 104", "Cinturon 105", "Correa", "Dige", "Estampas",
-          "Frosting", "Guantes", "Hanger", "Indicadores", "Cinturon 105" };
 
+      Cursor cursor = controller.getCursorList();
+      startManagingCursor(cursor);
+
+      String[] from = new String[] { "name" };
+      int[] to = new int[] { R.id.text };
+
+      SimpleCursorAdapter cursorAdapter = new SimpleCursorAdapter(
+          ListadoProductos.this, R.layout.product_row, cursor, from, to);
+
+      listView.setAdapter(cursorAdapter);
     }
   }
 }

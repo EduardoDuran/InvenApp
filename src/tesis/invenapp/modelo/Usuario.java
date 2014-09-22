@@ -1,5 +1,7 @@
 package tesis.invenapp.modelo;
 
+import tesis.invenapp.Register.ViewElements;
+
 public class Usuario {
   private int id;
   private String username, password, company, email, activity, ruc;
@@ -10,7 +12,7 @@ public class Usuario {
     setPassword(pass);
   }
 
-  public Usuario(String id, String username, String password, String company,
+  public Usuario(String username, String password, String company,
       String email, String activity, String ruc) {
     super();
     this.username = username;
@@ -25,6 +27,11 @@ public class Usuario {
     super();
     this.id = id;
     this.username = username;
+  }
+
+  public Usuario(ViewElements elements) {
+    this(elements.getUsername(), elements.getPassword(), elements.getCompany(),
+        elements.getEmail(), elements.getActivity(), elements.getRuc());
   }
 
   public int getId() {
