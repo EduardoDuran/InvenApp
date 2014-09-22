@@ -10,7 +10,7 @@
 diseñada y desarrollada en Ecuador por RandomS.A.
 sugerencias y contacto a hola@invenapp.com </string>
 <string name="usuario2">Usuario</string>
-<string name="contrasena2">contrasena</string>
+<string name="contrasena2">contraseña</string>
 <string name="ingresos">Ingreso</string>
 <string name="salidas">Salida</string>
 <string name="modificacion">Modificacion</string>
@@ -35,5 +35,23 @@ Se sugiere agregar para el 3 de agosto los siguientes productos:</string>
 eliminación de productos que usted ha realizado.
 si usted NO ha utilizado esta aplicación regularmente
 le aconsejamos no seguir las sugerencias.</string>
-
+<string name="explicacion">Para empezar a utilizar InvenApp microempresas, debes registrarte, esto nos ayudará a mejorar la aplicación y brindarte un mejor servicio.</string>
+<string name="nomusuario1">Nombre de usuario</string>
+<string name="nomempresa">Nombre de Empresa</string>
+<string name="correo">Correo</string>
+<string name="Actividad">Nombre de usuario</string>
+<string name="ruc">ruc</string>
+<string name="country_prompt">Selecciona Actividad</string>
+<string-array name="country_arrays">
+        <item>Servicios Computacionales</item>
+        <item>Repuestos</item>
+        <item>Retail</item>
+        <item>Ropa</item>
+        <item>Fabrica</item>
+        <item>Taller</item>
+</string-array>
+<string name="acepto">Acepto los términos y condiciones.</string>
+<string name="registrarme">Registrarme!</string>
+<string name="masvendidos">Productos con más salida</string>
+<string name="menosvendidos">Productos con menos rotación.</string>
 </resources>
