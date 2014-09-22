@@ -40,8 +40,7 @@ public class Login extends Activity {
       new AlertDialog.Builder(this)
           .setTitle("Credenciales Incorrectas")
           .setMessage(
-              "No tenemos registradas estas credenciales en nuestra base de datos."
-                  + elements.getUsername() + elements.getPassword())
+              "No tenemos registradas estas credenciales en nuestra base de datos.")
           .setPositiveButton(android.R.string.ok,
               new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {

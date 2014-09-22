@@ -30,21 +30,25 @@ public class ListadoProductos extends Activity {
   }
 
   public boolean goToIngreso(MenuItem item) {
+    finish();
     startActivity(new Intent(this, Ingreso.class));
     return true;
   }
 
   public boolean goToSalida(MenuItem item) {
+    finish();
     startActivity(new Intent(this, Salida.class));
     return true;
   }
 
   public boolean goToModificar(MenuItem item) {
+    finish();
     startActivity(new Intent(this, Modificar.class));
     return true;
   }
 
   public boolean goToEstadisticas(MenuItem item) {
+    finish();
     startActivity(new Intent(this, Estadisticas.class));
     return true;
   }
