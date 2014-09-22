@@ -4,7 +4,6 @@
 	<item
 		android:id="@+id/Ingreso"
 		android:onClick="goToIngreso"
-		android:showAsAction="ifRoom"
 		android:title="@string/ingresos"/>
 	<item
 		android:id="@+id/Salida"
