@@ -1,33 +1,98 @@
 package tesis.invenapp.modelo;
 
+import tesis.invenapp.Register.ViewElements;
+
 public class Usuario {
-  String user, pass;
+  private int id;
+  private String username, password, company, email, activity, ruc;
 
   public Usuario(String user, String pass) {
     super();
-    this.user = user;
-    this.pass = pass;
+    setUsername(user);
+    setPassword(pass);
   }
 
-  public String getUser() {
-    return user;
+  public Usuario(String username, String password, String company,
+      String email, String activity, String ruc) {
+    super();
+    this.username = username;
+    this.password = password;
+    this.company = company;
+    this.email = email;
+    this.activity = activity;
+    this.ruc = ruc;
   }
 
-  public void setUser(String user) {
-    this.user = user;
+  public Usuario(int id, String username) {
+    super();
+    this.id = id;
+    this.username = username;
   }
 
-  public String getPass() {
-    return pass;
+  public Usuario(ViewElements elements) {
+    this(elements.getUsername(), elements.getPassword(), elements.getCompany(),
+        elements.getEmail(), elements.getActivity(), elements.getRuc());
   }
 
-  public void setPass(String pass) {
-    this.pass = pass;
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public String getPassword() {
+    return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public String getCompany() {
+    return company;
+  }
+
+  public void setCompany(String company) {
+    this.company = company;
+  }
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
+  public String getActivity() {
+    return activity;
+  }
+
+  public void setActivity(String activity) {
+    this.activity = activity;
+  }
+
+  public String getRuc() {
+    return ruc;
+  }
+
+  public void setRuc(String ruc) {
+    this.ruc = ruc;
   }
 
   @Override
   public boolean equals(Object o) {
-    return ((Usuario) o).getPass().equals(getPass())
-        && ((Usuario) o).getUser().equals(getUser());
+    return ((Usuario) o).getPassword().equals(getPassword())
+        && ((Usuario) o).getUsername().equals(getUsername());
   }
 }

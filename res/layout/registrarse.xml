@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="14dp"
-        android:layout_marginTop="18dp"
-        android:text="@string/explicacion" />
+	<TextView
+		android:id="@+id/textView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginLeft="14dp"
+		android:layout_marginTop="18dp"
+		android:text="@string/explicacion" />
 
-    <EditText
-        android:id="@+id/nomempresa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nomusuario"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
+	<EditText
+		android:id="@+id/nomempresa"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/nomusuario"
+		android:layout_centerHorizontal="true"
+		android:ems="10"
         android:hint="@string/nomempresa" />
 
-    <EditText
-        android:id="@+id/correo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/nomempresa"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textEmailAddress"
+	<EditText
+		android:id="@+id/correo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/nomempresa"
+		android:layout_centerHorizontal="true"
+		android:ems="10"
+		android:inputType="textEmailAddress"
         android:hint="@string/correo" />
 
     <requestFocus />
@@ -44,6 +44,7 @@
 
     <EditText
         android:id="@+id/nomusuario"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/nomempresa"
@@ -103,5 +104,4 @@
         android:layout_marginBottom="30dp"
         android:ems="10" 
         android:hint="@string/ruc"/>
-
 </RelativeLayout>

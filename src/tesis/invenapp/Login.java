@@ -8,7 +8,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Login extends Activity {
 
@@ -23,25 +25,19 @@ public class Login extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.iniciarsesion);
     elements = new ViewElements();
-  }
-
-  public void goToRegister(View v) {
-    finish();
-    startActivity(new Intent(this, Register.class));
+    controller = new LoginController(this);
   }
 
   public void login(View v) {
-    controller = new LoginController(new Usuario(elements.getUsername(),
-        elements.getPassword()));
-    if (controller.isRegistered()) {
+    if (controller.isRegistered(new Usuario(elements.getUsername(), elements
+        .getPassword()))) {
       finish();
       startActivity(new Intent(this, ListadoProductos.class));
     } else {
       new AlertDialog.Builder(this)
           .setTitle("Credenciales Incorrectas")
           .setMessage(
-              "No tenemos registradas estas credenciales en nuestra base de datos."
-                  + elements.getUsername() + elements.getPassword())
+ "No tenemos registradas estas credenciales en nuestra base de datos.")
           .setPositiveButton(android.R.string.ok,
               new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
@@ -54,15 +50,21 @@ public class Login extends Activity {
   private class ViewElements {
     // Vista Elements
     private EditText user, pass;
-
-    // private TextView register;
-    // private Button login;
+    private TextView register;
 
     public ViewElements() {
       user = (EditText) findViewById(R.id.usuario);
       pass = (EditText) findViewById(R.id.contrasena);
-      // register = (TextView) findViewById(R.id.registrarse);
-      // login = (Button) findViewById(R.id.login);
+      register = (TextView) findViewById(R.id.registrarse);
+
+      register.setOnClickListener(new OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+          finish();
+          startActivity(new Intent(Login.this, Register.class));
+        }
+      });
     }
 
     public String getUsername() {

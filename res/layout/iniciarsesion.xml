@@ -58,7 +58,6 @@
 		android:layout_below="@+id/login"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="16dp"
-		android:onClick="goToRegister"
 		android:text="@string/registrarse" />
 
 	<TextView
