@@ -33,7 +33,7 @@ public class Login extends Activity {
     controller = new LoginController(new Usuario(elements.getUsername(),
         elements.getPassword()));
     if (controller.isRegistered()) {
-      startActivity(new Intent(this, Register.class));
+      startActivity(new Intent(this, ListadoProductos.class));
     } else {
       new AlertDialog.Builder(this)
           .setTitle("Credenciales Incorrectas")

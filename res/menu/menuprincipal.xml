@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/Ingreso"
-          android:title="@string/ingresos"
-          android:showAsAction="ifRoom"/>
-    <item android:id="@+id/Salida"
-          android:title="@string/salidas" />
-    <item android:id="@+id/Modificar"
-          android:title="@string/modificacion" />
-    <item android:id="@+id/estadisticas"
-          android:title="@string/Estadisticas" />
-    <item android:id="@+id/Sugerencias"
-          android:title="@string/sugerencias" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item
+		android:id="@+id/Ingreso"
+		android:onClick="goToIngreso"
+		android:showAsAction="ifRoom"
+		android:title="@string/ingresos"/>
+	<item
+		android:id="@+id/Salida"
+		android:onClick="goToSalida"
+		android:title="@string/salidas"/>
+	<item
+		android:id="@+id/Modificar"
+		android:onClick="goToModificar"
+		android:title="@string/modificacion"/>
+	<item
+		android:id="@+id/estadisticas"
+		android:onClick="goToEstadisticas"
+		android:title="@string/Estadisticas"/>
+	<item
+		android:id="@+id/Sugerencias"
+		android:onClick="goToSugerencias"
+		android:title="@string/sugerencias"/>
+
 </menu>
