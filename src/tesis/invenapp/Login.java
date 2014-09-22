@@ -23,6 +23,7 @@ public class Login extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.iniciarsesion);
     elements = new ViewElements();
+    controller = new LoginController(this);
   }
 
   public void goToRegister(View v) {
@@ -31,9 +32,8 @@ public class Login extends Activity {
   }
 
   public void login(View v) {
-    controller = new LoginController(new Usuario(elements.getUsername(),
-        elements.getPassword()));
-    if (controller.isRegistered()) {
+    if (controller.isRegistered(new Usuario(elements.getUsername(), elements
+        .getPassword()))) {
       finish();
       startActivity(new Intent(this, ListadoProductos.class));
     } else {
