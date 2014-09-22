@@ -1,16 +1,18 @@
 package tesis.invenapp.controller;
 
-import tesis.invenapp.modelo.Usuario;
+import tesis.invenapp.ListadoProductos;
+import tesis.invenapp.db.DbHelper;
+import android.database.Cursor;
 
 public class ListadoController {
-  private Usuario almostUser;
 
-  public ListadoController(Usuario almostUser) {
-    super();
-    this.almostUser = almostUser;
+  DbHelper db;
+
+  public ListadoController(ListadoProductos listadoProductos) {
+    db = new DbHelper(listadoProductos);
   }
 
-  public Boolean isRegistered() {
-    return almostUser.equals(new Usuario("user", "pass"));
+  public Cursor getCursorList() {
+    return db.getAllProductsCursor();
   }
 }

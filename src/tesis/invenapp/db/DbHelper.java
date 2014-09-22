@@ -41,7 +41,7 @@ public class DbHelper extends SQLiteOpenHelper {
   private static final String KEY_DESCRIPTION   = "description";
   private static final String KEY_TYPE          = "type";
   private static final String KEY_STOCK         = "stock";
-  private static final String KEY_ORDER         = "order";
+  private static final String KEY_ORDER         = "orden";
   private static final String KEY_USER          = "user_id";
 
   // Outcome Table Columns names
@@ -49,7 +49,7 @@ public class DbHelper extends SQLiteOpenHelper {
   private static final String KEY_OUTCOME_DESC  = "description";
   private static final String KEY_PRODUCT       = "product_id";
   private static final String KEY_QUANTITY      = "amount";
-  private static final String KEY_OUTCOME_ORDER = "order";
+  private static final String KEY_OUTCOME_ORDER = "orden";
 
   public DbHelper(Context context) {
     super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -164,6 +164,17 @@ public class DbHelper extends SQLiteOpenHelper {
 
     // return contact list
     return productList;
+  }
+
+  // Getting All Contacts
+  public Cursor getAllProductsCursor() {
+    // Select All Query
+    String selectQuery = "SELECT  * FROM " + TABLE_PRODUCT;
+
+    SQLiteDatabase db = this.getWritableDatabase();
+
+    // return contact list
+    return db.rawQuery(selectQuery, null);
   }
 
   // Adding new outcome
