@@ -24,4 +24,10 @@ public class Usuario {
   public void setPass(String pass) {
     this.pass = pass;
   }
+
+  @Override
+  public boolean equals(Object o) {
+    return ((Usuario) o).getPass().equals(getPass())
+        && ((Usuario) o).getUser().equals(getUser());
+  }
 }

@@ -16,13 +16,12 @@ public final class R {
         public static final int logoinvenapp=0x7f020002;
     }
     public static final class id {
-        public static final int Ingreso=0x7f070008;
-        public static final int Modificar=0x7f07000a;
-        public static final int Salida=0x7f070009;
-        public static final int Sugerencias=0x7f07000c;
+        public static final int Ingreso=0x7f070007;
+        public static final int Modificar=0x7f070009;
+        public static final int Salida=0x7f070008;
+        public static final int Sugerencias=0x7f07000b;
         public static final int contrasena=0x7f070002;
-        public static final int estadisticas=0x7f07000b;
-        public static final int imageView1=0x7f070007;
+        public static final int estadisticas=0x7f07000a;
         public static final int list=0x7f070006;
         public static final int login=0x7f070003;
         public static final int registrarse=0x7f070004;
