@@ -11,4 +11,10 @@ diseñada y desarrollada en Ecuador por RandomS.A.
 sugerencias y contacto a hola@invenapp.com </string>
 <string name="usuario2">Usuario</string>
 <string name="contrasena2">contrasena</string>
+<string name="ingresos">Ingreso</string>
+<string name="salidas">Salida</string>
+<string name="modificacion">Modificacion</string>
+<string name="eliminar">Eliminar</string>
+<string name="Estadisticas">Estadisticas</string>
+<string name="sugerencias">Sugerencias</string>
 </resources>
