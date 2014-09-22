@@ -14,24 +14,13 @@
 		android:text="@string/explicacion" />
 
 	<EditText
-		android:id="@+id/nomusuario"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/textView1"
-		android:layout_centerHorizontal="true"
-		android:layout_marginTop="23dp"
-		android:ems="10"
-		android:text="@string/nomusuario1" >
-	</EditText>
-
-	<EditText
 		android:id="@+id/nomempresa"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/nomusuario"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/nomempresa" />
+        android:hint="@string/nomempresa" />
 
 	<EditText
 		android:id="@+id/correo"
@@ -41,64 +30,78 @@
 		android:layout_centerHorizontal="true"
 		android:ems="10"
 		android:inputType="textEmailAddress"
-		android:text="@string/correo" />
+        android:hint="@string/correo" />
 
-	<requestFocus />
+    <requestFocus />
 
-	<Spinner
-		android:id="@+id/actividad1"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignParentLeft="true"
-		android:layout_below="@+id/correo"
-		android:entries="@array/country_arrays"
-		android:paddingLeft="50dp"
-		android:paddingRight="50dp"
-		android:prompt="@string/country_prompt" />
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registrarme" />
 
-	<Spinner
-		android:id="@+id/actividad2"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_above="@+id/contrasena"
-		android:layout_alignParentLeft="true" />
+    <EditText
+        android:id="@+id/nomusuario"
 
-	<EditText
-		android:id="@+id/contrasena"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/actividad1"
-		android:layout_centerHorizontal="true"
-		android:ems="10"
-		android:inputType="textPassword"
-		android:text="@string/contrasena2" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nomempresa"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/nomusuario1" />
 
-	<EditText
-		android:id="@+id/repitecontrasena"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignLeft="@+id/correo"
-		android:layout_below="@+id/contrasena"
-		android:ems="10"
-		android:inputType="textPassword"
-		android:text="@string/contrasena2" />
+    <EditText
+        android:id="@+id/repitecontrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/correo"
+        android:layout_below="@+id/actividad1"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrasena2" />
 
-	<CheckBox
-		android:id="@+id/condiciones"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_alignLeft="@+id/textView1"
-		android:layout_below="@+id/repitecontrasena"
-		android:layout_marginTop="18dp"
-		android:text="@string/acepto" />
+    <EditText
+        android:id="@+id/contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/correo"
+        android:layout_below="@+id/repitecontrasena"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/contrasena2" />
 
-	<Button
-		android:id="@+id/button1"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@+id/checkBox1"
-		android:layout_centerHorizontal="true"
-		android:onClick="registe"
-		android:text="@string/registrarme" />
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/contrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/acepto" />
 
+    <Spinner
+        android:id="@+id/actividad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/correo"
+        android:layout_marginTop="21dp"
+        android:entries="@array/country_arrays"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:prompt="@string/country_prompt"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/repitecontrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:ems="10" 
+        android:hint="@string/ruc"/>
 </RelativeLayout>

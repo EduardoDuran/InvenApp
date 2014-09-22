@@ -31,12 +31,12 @@ public class Register extends Activity {
 
   public void registe(View v) {
     if (controller.isValidForm(elements)) {
-      controller.SaveUser(new Usuario(elements));
-    } else {
-      new AlertDialog.Builder(this)
-          .setTitle("Formulario con Errores")
-          .setMessage("Existe algún problema en el Formulario.")
-          .setPositiveButton(android.R.string.ok,
+		list.add("Servicios Computacionales");
+		list.add("Repuestos");
+		list.add("Retail");
+		list.add("Ropa");
+		list.add("Fabrica");
+		list.add("Taller");
               new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
                   // continue with delete
@@ -52,7 +52,7 @@ public class Register extends Activity {
 
     public ViewElements() {
       act = (Spinner) findViewById(R.id.actividad1);
-      act2 = (Spinner) findViewById(R.id.actividad2);
+	
       username = (EditText) findViewById(R.id.nomusuario);
       company = (EditText) findViewById(R.id.nomempresa);
       email = (EditText) findViewById(R.id.correo);
