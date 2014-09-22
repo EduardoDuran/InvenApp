@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.View;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 public class ListadoProductos extends Activity {
@@ -29,24 +29,29 @@ public class ListadoProductos extends Activity {
     return super.onCreateOptionsMenu(menu);
   }
 
-  public void goToIngreso(View v) {
+  public boolean goToIngreso(MenuItem item) {
     startActivity(new Intent(this, Ingreso.class));
+    return true;
   }
 
-  public void goToSalida(View v) {
+  public boolean goToSalida(MenuItem item) {
     startActivity(new Intent(this, Salida.class));
+    return true;
   }
 
-  public void goToModificar(View v) {
+  public boolean goToModificar(MenuItem item) {
     startActivity(new Intent(this, Modificar.class));
+    return true;
   }
 
-  public void goToEstadisticas(View v) {
+  public boolean goToEstadisticas(MenuItem item) {
     startActivity(new Intent(this, Estadisticas.class));
+    return true;
   }
 
-  public void goToSugerencias(View v) {
+  public boolean goToSugerencias(MenuItem item) {
     startActivity(new Intent(this, Sugerencias.class));
+    return true;
   }
 
   private class ViewElements {

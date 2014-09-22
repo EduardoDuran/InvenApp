@@ -26,6 +26,7 @@ public class Login extends Activity {
   }
 
   public void goToRegister(View v) {
+    finish();
     startActivity(new Intent(this, Register.class));
   }
 
@@ -33,12 +34,14 @@ public class Login extends Activity {
     controller = new LoginController(new Usuario(elements.getUsername(),
         elements.getPassword()));
     if (controller.isRegistered()) {
+      finish();
       startActivity(new Intent(this, ListadoProductos.class));
     } else {
       new AlertDialog.Builder(this)
           .setTitle("Credenciales Incorrectas")
           .setMessage(
-              "No tenemos registradas estas credenciales en nuestra base de datos.o")
+              "No tenemos registradas estas credenciales en nuestra base de datos."
+                  + elements.getUsername() + elements.getPassword())
           .setPositiveButton(android.R.string.ok,
               new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) {
