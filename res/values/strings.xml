@@ -17,4 +17,23 @@ sugerencias y contacto a hola@invenapp.com </string>
 <string name="eliminar">Eliminar</string>
 <string name="Estadisticas">Estadisticas</string>
 <string name="sugerencias">Sugerencias</string>
+<string name="bienvenido">¡Bienvenido!</string>
+<string name="instruccion">A continuación ingresarás tus articulos al inventario. Recuerda que la información debe ser exacta y lo más detallada posible.</string>
+<string name="codigo">Codigo</string>
+<string name="producto">Producto</string>
+<string name="descripcion">Descripcion</string>
+<string name="tipo">Tipo - Categoria</string>
+<string name="cantidad1">Cantidad Ingresan</string>
+<string name="cantidad2">Cantidad Salen</string>
+<string name="ordencompra">Orden de Compra</string>
+<string name="salida22">¡Atención!</string>
+<string name="factura">Numero de Factura</string>
+<string name="instruccionsalida">A continuación eliminarás artículos de inventario. Recuerda determinar si salen por ventas o por baja.</string>
+<string name="sugiere">
+Se sugiere agregar para el 3 de agosto los siguientes productos:</string>
+<string name="suge">Esas sugerencias son el resultado del ingreso, egreso y
+eliminación de productos que usted ha realizado.
+si usted NO ha utilizado esta aplicación regularmente
+le aconsejamos no seguir las sugerencias.</string>
+
 </resources>

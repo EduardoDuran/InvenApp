@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/salida2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/salida22" />
+
+    <TextView
+        android:id="@+id/instrucsalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/salida2"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/instruccionsalida" />
+
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instrucsalida"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:text="@string/codigo" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/codigo"
+        android:layout_below="@+id/codigo"
+        android:ems="10"
+        android:text="@string/producto" />
+
+    <EditText
+        android:id="@+id/descripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/producto"
+        android:layout_below="@+id/producto"
+        android:ems="10"
+        android:text="@string/descripcion" />
+
+    <EditText
+        android:id="@+id/salen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripcion"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/cantidad2" />
+
+    <EditText
+        android:id="@+id/factura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salen"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:text="@string/factura" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/factura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Guardar cambios" />
+
+</RelativeLayout>

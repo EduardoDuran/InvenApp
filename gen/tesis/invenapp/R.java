@@ -16,24 +16,45 @@ public final class R {
         public static final int logoinvenapp=0x7f020002;
     }
     public static final class id {
-        public static final int Ingreso=0x7f070008;
-        public static final int Modificar=0x7f07000a;
-        public static final int Salida=0x7f070009;
-        public static final int Sugerencias=0x7f07000c;
-        public static final int contrasena=0x7f070003;
-        public static final int estadisticas=0x7f07000b;
+        public static final int Ingreso=0x7f07001a;
+        public static final int Modificar=0x7f07001c;
+        public static final int Ordencompra=0x7f070008;
+        public static final int Salida=0x7f07001b;
+        public static final int Sugerencias=0x7f07001e;
+        public static final int brazaletes=0x7f070014;
+        public static final int button1=0x7f070013;
+        public static final int cantidad=0x7f070007;
+        public static final int cinturones=0x7f070016;
+        public static final int codigo=0x7f070003;
+        public static final int contrasena=0x7f07000b;
+        public static final int descripcion=0x7f070005;
+        public static final int estadisticas=0x7f07001d;
+        public static final int factura=0x7f070012;
+        public static final int guardar=0x7f070009;
         public static final int imageView1=0x7f070000;
-        public static final int list=0x7f070007;
-        public static final int login=0x7f070004;
-        public static final int registrarse=0x7f070005;
+        public static final int instrucsalida=0x7f070010;
+        public static final int list=0x7f07000e;
+        public static final int login=0x7f07000c;
+        public static final int prod=0x7f070017;
+        public static final int producto=0x7f070004;
+        public static final int pulseras=0x7f070015;
+        public static final int registrarse=0x7f07000d;
+        public static final int resul=0x7f070019;
+        public static final int salen=0x7f070011;
+        public static final int salida2=0x7f07000f;
+        public static final int sug=0x7f070018;
         public static final int textView1=0x7f070002;
-        public static final int textView2=0x7f070006;
-        public static final int usuario=0x7f070001;
+        public static final int textView2=0x7f070001;
+        public static final int tipo=0x7f070006;
+        public static final int usuario=0x7f07000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int iniciarsesion=0x7f030001;
-        public static final int listado=0x7f030002;
+        public static final int ingreso=0x7f030001;
+        public static final int iniciarsesion=0x7f030002;
+        public static final int listado=0x7f030003;
+        public static final int salida=0x7f030004;
+        public static final int sugerencias=0x7f030005;
     }
     public static final class menu {
         public static final int menuprincipal=0x7f060000;
@@ -41,17 +62,31 @@ public final class R {
     public static final class string {
         public static final int Estadisticas=0x7f04000c;
         public static final int app_name=0x7f040000;
+        public static final int bienvenido=0x7f04000e;
+        public static final int cantidad1=0x7f040014;
+        public static final int cantidad2=0x7f040015;
+        public static final int codigo=0x7f040010;
         public static final int contrasena2=0x7f040007;
         public static final int copy=0x7f040005;
+        public static final int descripcion=0x7f040012;
         public static final int eliminar=0x7f04000b;
+        public static final int factura=0x7f040018;
         public static final int hello_world=0x7f040001;
         public static final int ingresos=0x7f040008;
         public static final int iniciar=0x7f040002;
+        public static final int instruccion=0x7f04000f;
+        public static final int instruccionsalida=0x7f040019;
         public static final int log1=0x7f040003;
         public static final int modificacion=0x7f04000a;
+        public static final int ordencompra=0x7f040016;
+        public static final int producto=0x7f040011;
         public static final int registrarse=0x7f040004;
+        public static final int salida22=0x7f040017;
         public static final int salidas=0x7f040009;
+        public static final int suge=0x7f04001b;
         public static final int sugerencias=0x7f04000d;
+        public static final int sugiere=0x7f04001a;
+        public static final int tipo=0x7f040013;
         public static final int usuario2=0x7f040006;
     }
     public static final class style {
