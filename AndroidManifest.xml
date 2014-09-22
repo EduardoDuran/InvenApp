@@ -26,6 +26,34 @@
 			android:name=".Login"
 			android:label="@string/iniciar" >
 		</activity>
+		<activity
+			android:name=".Register"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".ListadoProductos"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Ingreso"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Salida"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Modificar"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Estadisticas"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Sugerencias"
+			android:label="@string/iniciar" >
+		</activity>
 	</application>
 
 </manifest>
