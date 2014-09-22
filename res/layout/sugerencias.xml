@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/sugiere"
+        android:textColor="#0071BC" />
+
+    <TextView
+        android:id="@+id/brazaletes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="30 brazaletes" />
+
+    <TextView
+        android:id="@+id/pulseras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/brazaletes"
+        android:layout_below="@+id/brazaletes"
+        android:text="22 pulseras" />
+
+    <TextView
+        android:id="@+id/cinturones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pulseras"
+        android:layout_below="@+id/pulseras"
+        android:text="9 cinturones tipo zebra" />
+
+    <TextView
+        android:id="@+id/sug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/prod"
+        android:layout_below="@+id/prod"
+        android:layout_marginTop="18dp"
+        android:text="Aligators
+Tiene Poca-Ninguna rotación, se
+recomienda efectuar promociónes 
+para rotar este producto en el
+inventario. " />
+
+    <TextView
+        android:id="@+id/resul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sug"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:text="@string/suge"
+        android:textColor="#1D97DB"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/cinturones"
+        android:layout_marginTop="34dp"
+        android:text="Los productos" />
+
+</RelativeLayout>
