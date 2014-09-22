@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    
     <string name="app_name">InvenApp</string>
     <string name="hello_world">Hello world!</string>
-
+    <string name="iniciar">Iniciar Sesión</string>
+    <string name="log1">Iniciar Sesión</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="copy">InvenApp© es una marca registrada de RandomS.A. 
+diseñada y desarrollada en Ecuador por RandomS.A.
+sugerencias y contacto a hola@invenapp.com </string>
+<string name="usuario2">Usuario</string>
+<string name="contrasena2">contrasena</string>
 </resources>
