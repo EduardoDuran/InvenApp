@@ -22,62 +22,6 @@
 		android:gravity="center"
 		android:text="@string/instruccion" />
 
-<<<<<<< HEAD
-    <EditText
-        android:id="@+id/codigo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:ems="10"
-        android:hint="@string/codigo" />
-
-    <EditText
-        android:id="@+id/producto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/codigo"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/producto" />
-
-    <EditText
-        android:id="@+id/descripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/producto"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/descripcion" />
-
-    <EditText
-        android:id="@+id/tipo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/descripcion"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/tipo" />
-
-    <EditText
-        android:id="@+id/cantidad"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tipo"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/cantidad1" />
-
-    <EditText
-        android:id="@+id/Ordencompra"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/cantidad"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:hint="@string/ordencompra" />
-=======
 	<EditText
 		android:id="@+id/codigo"
 		android:layout_width="wrap_content"
@@ -86,7 +30,7 @@
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="18dp"
 		android:ems="10"
-		android:text="@string/codigo" />
+		android:hint="@string/codigo" />
 
 	<EditText
 		android:id="@+id/producto"
@@ -95,7 +39,7 @@
 		android:layout_below="@+id/codigo"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/producto" />
+		android:hint="@string/producto" />
 
 	<EditText
 		android:id="@+id/descripcion"
@@ -104,7 +48,7 @@
 		android:layout_below="@+id/producto"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/descripcion" />
+		android:hint="@string/descripcion" />
 
 	<EditText
 		android:id="@+id/tipo"
@@ -113,7 +57,7 @@
 		android:layout_below="@+id/descripcion"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/tipo" />
+		android:hint="@string/tipo" />
 
 	<EditText
 		android:id="@+id/cantidad"
@@ -122,7 +66,7 @@
 		android:layout_below="@+id/tipo"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/cantidad1" />
+		android:hint="@string/cantidad1" />
 
 	<EditText
 		android:id="@+id/Ordencompra"
@@ -131,8 +75,7 @@
 		android:layout_below="@+id/cantidad"
 		android:layout_centerHorizontal="true"
 		android:ems="10"
-		android:text="@string/ordencompra" />
->>>>>>> master
+		android:hint="@string/ordencompra" />
 
 	<Button
 		android:id="@+id/guardar"
