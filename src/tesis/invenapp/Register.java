@@ -28,9 +28,12 @@ public class Register extends Activity {
 
 	public void addItemsOnSpinner2() {
 		List<String> list = new ArrayList<String>();
-		list.add("list 1");
-		list.add("list 2");
-		list.add("list 3");
+		list.add("Servicios Computacionales");
+		list.add("Repuestos");
+		list.add("Retail");
+		list.add("Ropa");
+		list.add("Fabrica");
+		list.add("Taller");
 		ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this,
 				android.R.layout.simple_spinner_item, list);
 		dataAdapter
@@ -52,7 +55,7 @@ public class Register extends Activity {
 
 		public ViewElements() {
 			act = (Spinner) findViewById(R.id.actividad1);
-			act2 = (Spinner) findViewById(R.id.actividad2);
+	
 			// register = (TextView) findViewById(R.id.registrarse);
 			// login = (Button) findViewById(R.id.login);
 		}

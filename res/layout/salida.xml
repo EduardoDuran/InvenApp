@@ -32,7 +32,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:text="@string/codigo" >
+        android:hint="@string/codigo" >
 
         <requestFocus />
     </EditText>
@@ -44,7 +44,7 @@
         android:layout_alignLeft="@+id/codigo"
         android:layout_below="@+id/codigo"
         android:ems="10"
-        android:text="@string/producto" />
+        android:hint="@string/producto" />
 
     <EditText
         android:id="@+id/descripcion"
@@ -53,7 +53,7 @@
         android:layout_alignLeft="@+id/producto"
         android:layout_below="@+id/producto"
         android:ems="10"
-        android:text="@string/descripcion" />
+        android:hint="@string/descripcion" />
 
     <EditText
         android:id="@+id/salen"
@@ -62,7 +62,7 @@
         android:layout_below="@+id/descripcion"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:text="@string/cantidad2" />
+        android:hint="@string/cantidad2" />
 
     <EditText
         android:id="@+id/factura"
@@ -71,7 +71,7 @@
         android:layout_below="@+id/salen"
         android:layout_centerHorizontal="true"
         android:ems="10"
-        android:text="@string/factura" />
+        android:hint="@string/factura" />
 
     <Button
         android:id="@+id/button1"
