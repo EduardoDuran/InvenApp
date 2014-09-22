@@ -1,27 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tesis.invenapp"
-    android:versionCode="1"
-    android:versionName="1.0" >
+	package="tesis.invenapp"
+	android:versionCode="1"
+	android:versionName="1.0" >
 
-    <uses-sdk
-        android:minSdkVersion="L"
-        android:targetSdkVersion="22" />
+	<uses-sdk
+		android:minSdkVersion="16"
+		android:targetSdkVersion="20" />
 
-    <application
-        android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+		<activity
+			android:name=".Splash"
+			android:label="@string/app_name" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name=".Login"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Register"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".ListadoProductos"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Ingreso"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Salida"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Modificar"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Estadisticas"
+			android:label="@string/iniciar" >
+		</activity>
+		<activity
+			android:name=".Sugerencias"
+			android:label="@string/iniciar" >
+		</activity>
+	</application>
 
 </manifest>
