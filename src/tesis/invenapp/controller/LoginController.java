@@ -1,16 +1,20 @@
 package tesis.invenapp.controller;
 
+import tesis.invenapp.db.DbHelper;
 import tesis.invenapp.modelo.Usuario;
+import android.app.Activity;
 
 public class LoginController {
-  private Usuario almostUser;
+  DbHelper db;
 
-  public LoginController(Usuario almostUser) {
+  public LoginController(Activity login) {
     super();
-    this.almostUser = almostUser;
+    db = new DbHelper(login);
   }
 
-  public Boolean isRegistered() {
-    return almostUser.equals(new Usuario("user", "pass"));
+  public Boolean isRegistered(Usuario almostUser) {
+    if (db.verifyUser(almostUser) == null)
+      return false;
+    return true;
   }
 }

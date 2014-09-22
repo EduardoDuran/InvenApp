@@ -1,10 +1,11 @@
 package tesis.invenapp.modelo;
 
 public class Producto {
-  String codigo, nombre, descripcion, tipo, cantidad, orden;
+  private int userId;
+  private String codigo, nombre, descripcion, tipo, cantidad, orden;
 
   public Producto(String codigo, String nombre, String descripcion,
-      String tipo, String cantidad, String orden) {
+      String tipo, String cantidad, String orden, int userId) {
     super();
     this.codigo = codigo;
     this.nombre = nombre;
@@ -12,6 +13,7 @@ public class Producto {
     this.tipo = tipo;
     this.cantidad = cantidad;
     this.orden = orden;
+    this.userId = userId;
   }
 
   public String getCodigo() {
@@ -62,4 +64,11 @@ public class Producto {
     this.orden = orden;
   }
 
+  public int getUserId() {
+    return userId;
+  }
+
+  public void setOrden(int userId) {
+    this.userId = userId;
+  }
 }
