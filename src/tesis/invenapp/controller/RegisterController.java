@@ -13,7 +13,7 @@ public class RegisterController {
     db = new DbHelper(register);
   }
 
-  public void SaveUser(Usuario almostUser) {
+  public void saveUser(Usuario almostUser) {
     db.registerUser(almostUser);
   }
 

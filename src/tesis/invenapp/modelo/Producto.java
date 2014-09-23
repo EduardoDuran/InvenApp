@@ -1,8 +1,20 @@
 package tesis.invenapp.modelo;
 
+import tesis.invenapp.Ingreso.ViewElements;
+
 public class Producto {
   private int userId;
   private String codigo, nombre, descripcion, tipo, cantidad, orden;
+
+  public Producto(String nombre, String descripcion, String tipo,
+      String cantidad, String orden) {
+    super();
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+    this.tipo = tipo;
+    this.cantidad = cantidad;
+    this.orden = orden;
+  }
 
   public Producto(String codigo, String nombre, String descripcion,
       String tipo, String cantidad, String orden, int userId) {
@@ -14,6 +26,11 @@ public class Producto {
     this.cantidad = cantidad;
     this.orden = orden;
     this.userId = userId;
+  }
+
+  public Producto(ViewElements elements) {
+    this(elements.getProducto(), elements.getDescripcion(), elements.getTipo(),
+        elements.getCantidad(), elements.getOrdenCompra());
   }
 
   public String getCodigo() {
@@ -68,7 +85,7 @@ public class Producto {
     return userId;
   }
 
-  public void setOrden(int userId) {
+  public void setUserId(int userId) {
     this.userId = userId;
   }
 }

@@ -1,16 +1,34 @@
 package tesis.invenapp.controller;
 
-import tesis.invenapp.modelo.Usuario;
+import tesis.invenapp.Ingreso;
+import tesis.invenapp.Ingreso.ViewElements;
+import tesis.invenapp.db.DbHelper;
+import tesis.invenapp.modelo.Producto;
+import android.content.Context;
+import android.content.SharedPreferences;
 
 public class IngresoController {
-  private Usuario almostUser;
+  DbHelper db;
+  Context  contexto;
+  int      userId;
 
-  public IngresoController(Usuario almostUser) {
+  public IngresoController(Ingreso ingreso) {
     super();
-    this.almostUser = almostUser;
+    contexto = ingreso;
+    db = new DbHelper(ingreso);
   }
 
-  public Boolean isRegistered() {
-    return almostUser.equals(new Usuario("user", "pass"));
+  public void saveProduct(Producto product) {
+    product.setUserId(userId);
+    db.addProduct(product);
+  }
+
+  public boolean isValidForm(ViewElements elements) {
+    if (elements.getCantidad().isEmpty() || elements.getProducto().isEmpty())
+      return false;
+    SharedPreferences pref = contexto.getApplicationContext()
+        .getSharedPreferences("InvenApp", 0);
+    userId = pref.getInt("userId", 0); // getting Integer
+    return true;
   }
 }

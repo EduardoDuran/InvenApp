@@ -32,7 +32,7 @@ public class Register extends Activity {
 
   public void registe(View v) {
     if (controller.isValidForm(elements)) {
-      controller.SaveUser(new Usuario(elements));
+      controller.saveUser(new Usuario(elements));
       finish();
       startActivity(new Intent(this, Login.class));
     } else {

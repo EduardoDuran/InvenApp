@@ -94,8 +94,8 @@ public class ListadoProductos extends Activity {
       LayoutInflater inflater = (LayoutInflater) context
           .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
       View rowView = inflater.inflate(R.layout.product_row, parent, false);
-      TextView cantidad = (TextView) rowView.findViewById(R.id.text);
-      TextView nombre = (TextView) rowView.findViewById(R.id.text);
+      TextView cantidad = (TextView) rowView.findViewById(R.id.cantidad);
+      TextView nombre = (TextView) rowView.findViewById(R.id.productolista);
       cantidad.setText(values[position].getCantidad());
       nombre.setText(values[position].getNombre());
 
