@@ -1,8 +1,10 @@
 package tesis.invenapp.controller;
 
+import java.util.List;
+
 import tesis.invenapp.ListadoProductos;
 import tesis.invenapp.db.DbHelper;
-import android.database.Cursor;
+import tesis.invenapp.modelo.Producto;
 
 public class ListadoController {
 
@@ -12,7 +14,7 @@ public class ListadoController {
     db = new DbHelper(listadoProductos);
   }
 
-  public Cursor getCursorList() {
-    return db.getAllProductsCursor();
+  public List<Producto> getListProduct() {
+    return db.getAllProducts();
   }
 }
