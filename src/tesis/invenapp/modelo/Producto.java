@@ -6,8 +6,8 @@ public class Producto {
   private int userId;
   private String codigo, nombre, descripcion, tipo, cantidad, orden;
 
-  public Producto(String nombre, String descripcion, String tipo,
-      String cantidad, String orden) {
+  public Producto(String codigo, String nombre, String descripcion,
+      String tipo, String cantidad, String orden) {
     super();
     this.nombre = nombre;
     this.descripcion = descripcion;
@@ -29,8 +29,9 @@ public class Producto {
   }
 
   public Producto(ViewElements elements) {
-    this(elements.getProducto(), elements.getDescripcion(), elements.getTipo(),
-        elements.getCantidad(), elements.getOrdenCompra());
+    this(elements.getCodigo(), elements.getProducto(), elements
+        .getDescripcion(), elements.getTipo(), elements.getCantidad(), elements
+        .getOrdenCompra());
   }
 
   public String getCodigo() {
