@@ -14,6 +14,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -76,6 +77,7 @@ public class ListadoProductos extends Activity {
       productList.toArray(productArray);
       listView.setAdapter(new ListadoAdapter(ListadoProductos.this,
           productArray));
+      listView.setOnItemClickListener(new ListadoItemClickListener());
     }
   }
 
@@ -100,6 +102,16 @@ public class ListadoProductos extends Activity {
       nombre.setText(values[position].getNombre());
 
       return rowView;
+    }
+  }
+
+  private class ListadoItemClickListener implements
+      ListView.OnItemClickListener {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position,
+        long id) {
+      Intent Modify=new Intent(ListadoProductos.this, Modificar.class);
+      startActivity(Modify);
     }
   }
 }
