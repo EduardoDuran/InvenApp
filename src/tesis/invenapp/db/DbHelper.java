@@ -114,12 +114,15 @@ public class DbHelper extends SQLiteOpenHelper {
       cursor.moveToFirst();
     else
       return null;
-
-    Usuario usuario = new Usuario(Integer.parseInt(cursor.getString(0)),
-        cursor.getString(1));
+    
+    if(cursor.getCount()>0)
+      return new Usuario(Integer.parseInt(cursor.getString(0)),
+          cursor.getString(1));
+    else
+      return null;
 
     // return user
-    return usuario;
+    
   }
 
   // Adding new Product
