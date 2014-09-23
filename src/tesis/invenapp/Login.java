@@ -31,6 +31,7 @@ public class Login extends Activity {
   public void login(View v) {
     if (controller.isRegistered(new Usuario(elements.getUsername(), elements
         .getPassword()))) {
+      controller.Login();
       finish();
       startActivity(new Intent(this, ListadoProductos.class));
     } else {

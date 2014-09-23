@@ -1,7 +1,10 @@
 package tesis.invenapp;
 
 import tesis.invenapp.controller.IngresoController;
+import tesis.invenapp.modelo.Producto;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,14 +20,28 @@ public class Ingreso extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.ingreso);
     elements = new ViewElements();
+    controller = new IngresoController(this);
   }
 
-  public void goToListado(View v) {
-    finish();
-    startActivity(new Intent(this, ListadoProductos.class));
+  public void save(View v) {
+    if (controller.isValidForm(elements)) {
+      controller.saveProduct(new Producto(elements));
+      finish();
+      startActivity(new Intent(this, ListadoProductos.class));
+    } else {
+      new AlertDialog.Builder(this)
+          .setTitle("Formulario con Errores")
+          .setMessage("La cantidad ni el Nombre del Producto pueden estar vacíos.")
+          .setPositiveButton(android.R.string.ok,
+              new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int which) {
+                  // continue with delete
+                }
+              }).show();
+    }
   }
 
-  private class ViewElements {
+  public class ViewElements {
     // Vista Elements
     private EditText codigo, producto, descripcion, tipo, cantidad,
         ordencompra;
